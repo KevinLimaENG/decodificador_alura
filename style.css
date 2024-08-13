@@ -1,0 +1,195 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+body {
+    background:#d4e3f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.criptografia {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    
+}
+
+.texto, .texto-resultado {
+    resize: none;
+    font-size: 25px;
+    color: darkblue;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.texto::placeholder {
+    color: rgba(0, 0, 139, 0.918);
+}
+
+.texto {
+    background: #E5E5E5;
+    border-style: dashed;
+    border-color: rgb(16, 16, 209);
+    width: 80%;
+    height: 70vh;
+}
+
+#aviso {
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
+    color: rgb(87, 87, 87);
+}
+
+.btn-criptografia {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8vh;
+    gap: 5vw;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 25px;
+    color: darkblue;
+    font-weight: bold;
+    background: #E5E5E5;
+    border: 2px solid darkblue;
+    transition: 0.5s;
+  
+}
+
+.btn:hover {
+    width: 200px;
+    height: 50px;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    background: darkblue;
+    border-color: darkblue;
+    cursor: pointer;
+    
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 45%;
+   
+
+}
+
+.texto-resultado::placeholder {
+    height: 80vh;
+    background-image:  url(/assets/chavecadeado.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    
+    color: darkblue;
+    text-align: center;
+}
+
+.texto-resultado {
+    background: white;
+    border-color: darkblue;
+    width: 70%;
+    height: 90vh;
+    box-shadow: 0 24px 32px 8px rgba(31, 28, 75, 0.2);
+
+
+}
+
+#copiar {
+    position: relative;
+    bottom: 20vh;
+}
+
+#limpar {
+    position: relative;
+    bottom: 19vh;
+    
+}
+footer p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 1 rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        width: auto;
+    }
+
+    main {
+        display: block;
+    }
+
+    .criptografia, .resultado {
+        width: 100%;
+        margin: 0;
+    }
+
+    #aviso {
+        align-items: center;
+        margin-left: 3vw;
+    }
+
+    .btn, .btn:hover {
+        width: 150px;
+    }
+
+    #limpar, #limpar:hover {
+        width: 180px;
+    }
+
+    .btn-criptografia {
+        margin-bottom: 5vh;
+    }
+    .texto, .texto-resultado {
+        width: 80%;
+        height: 60vh;
+        
+    }
+    .texto-resultado::placeholder {
+        height: 60vh;
+        font-size: 20px;
+        background-size: 200px;
+    }
+
+    #copiar {
+        bottom: 10vh;
+    }
+
+    #limpar {
+        bottom: 9vh;
+    }
+    
+
+}
