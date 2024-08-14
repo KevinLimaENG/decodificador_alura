@@ -11,7 +11,7 @@ function decodificar() {
 function copiar() {
     navigator.clipboard.writeText(output.value);
     input.select();
-a}
+}
 
 function limpar() {
     input.value = "";
@@ -36,6 +36,7 @@ botaoLimpar.onclick = limpar;
 
 input.addEventListener('beforeinput', function(event) {
     if(/[^a-z\s.,?!;]/.test(event.data)) {
+        event.preventDefault();
         aviso.style.color = "red";
         aviso.style.fontWeight = "bold";
         aviso.scrollIntoView(true);
@@ -44,3 +45,10 @@ input.addEventListener('beforeinput', function(event) {
         aviso.style.fontWeight = "normal";
     }
 });
+
+document.addEventListener("keydown", function(e) {
+    if(e.key == "Enter") {
+        e.preventDefault();
+    }
+});
+
