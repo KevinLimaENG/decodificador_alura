@@ -144,7 +144,7 @@ footer p {
     font-weight: 200;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
     body {
         width: auto;
     }
@@ -180,17 +180,17 @@ footer p {
         
     }
     .texto-resultado::placeholder {
-        height: 60vh;
+        height: 70vh;
         font-size: 20px;
-        background-size: 200px;
+        background-size: 130px;
     }
 
     #copiar {
-        bottom: 15vh;
+        bottom: 16vh;
     }
 
     #limpar {
-        bottom: 14vh;
+        bottom: 15vh;
     }
     
 
