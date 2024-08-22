@@ -68,7 +68,7 @@ main {
     height: 50px;
     font-size: 20px;
     padding: 5px;
-    border-radius: 25px;
+    border-radius: 30px;
     color: darkblue;
     font-weight: bold;
     background: #E5E5E5;
@@ -80,7 +80,7 @@ main {
 .btn:hover {
     width: 200px;
     height: 50px;
-    font-size: 23px;
+    font-size: 20px;
     padding: 5px;
     border-radius: 25px;
     color: white;
@@ -110,6 +110,8 @@ main {
     
     color: darkblue;
     text-align: center;
+
+
 }
 
 .texto-resultado {
@@ -162,7 +164,7 @@ footer p {
     }
 
     .btn, .btn:hover {
-        width: 150px;
+        width: 180px;
     }
 
     #limpar, #limpar:hover {
@@ -184,11 +186,11 @@ footer p {
     }
 
     #copiar {
-        bottom: 10vh;
+        bottom: 15vh;
     }
 
     #limpar {
-        bottom: 9vh;
+        bottom: 14vh;
     }
     
 
