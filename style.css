@@ -180,17 +180,17 @@ footer p {
         
     }
     .texto-resultado::placeholder {
-        height: 70vh;
+        height: 60%;
         font-size: 20px;
         background-size: 130px;
     }
 
     #copiar {
-        bottom: 16vh;
+        bottom: 20vh;
     }
 
     #limpar {
-        bottom: 15vh;
+        bottom: 19vh;
     }
     
 
